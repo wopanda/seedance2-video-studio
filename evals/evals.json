@@ -1,0 +1,29 @@
+{
+  "skill_name": "seedance2-video-studio",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "做一个 8 秒竖屏视频，雨夜街头，女生慢慢回头看镜头，电影感。",
+      "expected_output": "AI 应判断为 text_only，补全 9:16、结构化 prompt、基础 negative constraints。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "用这张图做首帧，生成一个 6 秒视频，人物从静止到微笑转头。",
+      "expected_output": "AI 应判断为 first_frame，@image1 作为首帧锚点，补全 6 秒、9:16、基础 negative constraints。",
+      "files": ["firstframe.png"]
+    },
+    {
+      "id": 3,
+      "prompt": "用图1做首帧，图2做尾帧，生成一个 6 秒视频，花朵从含苞到盛开。",
+      "expected_output": "AI 应判断为 first_last_frame，并输出过渡型 prompt 结构。",
+      "files": ["first.png", "last.png"]
+    },
+    {
+      "id": 4,
+      "prompt": "用这三张图帮我做个视频。",
+      "expected_output": "AI 应要求确认素材主次，而不是直接生成。",
+      "files": ["img1.png", "img2.png", "img3.png"]
+    }
+  ]
+}
