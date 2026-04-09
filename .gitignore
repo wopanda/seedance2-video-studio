@@ -8,5 +8,7 @@ scripts/__pycache__/
 output/
 runtime/.env.local
 runtime/downloads/
+runtime/task_registry.json
+scripts/*.bak-*
 *.mp4
 *.mov
